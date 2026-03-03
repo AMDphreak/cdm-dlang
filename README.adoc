@@ -1,0 +1,40 @@
+= CrystalDiskMark D
+AMDphreak <amdphreak@gmail.com>
+v0.1.0, 2026-03-02
+:toc:
+:homepage: https://github.com/AMDphreak/cdm-dlang
+
+A remake of the legendary CrystalDiskMark in Dlang, using dlangui for a modern, intuitive interface.
+
+== Features
+
+* [ ] Modern UI with common design metaphors
+* [ ] Sequential Read/Write benchmarks
+* [ ] Random 4K Read/Write benchmarks
+* [ ] Support for multiple drives
+* [ ] Dark mode support
+* [ ] Native Dlang implementation of benchmarks
+
+== Requirements
+
+* https://dlang.org/download.html[D compiler (DMD/LDC)]
+* https://dub.pm/[DUB package manager]
+
+== Building
+
+[source,powershell]
+----
+dub build
+----
+
+== Implementation Details
+
+This project aims to replicate the core functionality of CrystalDiskMark while providing a more flexible and modern user experience. It follows the benchmarking methodology documented in the original CrystalDiskMark source.
+
+=== Benchmarking Methodology
+
+Large sequential I/O tests are performed using `CreateFile` with `FILE_FLAG_NO_BUFFERING` and `FILE_FLAG_SEQUENTIAL_SCAN`. Random 4K tests use `FILE_FLAG_RANDOM_ACCESS` and overlapped I/O for high queue depths.
+
+== License
+
+MIT License - See the original CrystalDiskMark for details.

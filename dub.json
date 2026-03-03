@@ -1,0 +1,11 @@
+{
+	"description": "A minimal D application.",
+	"dependencies": {
+		"dlangui": "~>0.10.8"
+	},
+	"authors": [
+		"rjamd"
+	],
+	"license": "proprietary",
+	"name": "cdm-dlang"
+}

@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/cdm-dlang
+cdm-dlang.so
+cdm-dlang.dylib
+cdm-dlang.dll
+libcdm-dlang.a
+cdm-dlang.a
+cdm-dlang.lib
+cdm-dlang-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
