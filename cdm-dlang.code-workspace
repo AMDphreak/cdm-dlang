@@ -1,0 +1,65 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "extensions": {
+        "recommendations": [
+            // Code Formatters & Linters
+            "dprint.dprint",
+            "webfreak.code-d",
+            // Markup & Documentation
+            "asciidoctor.asciidoctor-vscode",
+            "DavidAnson.vscode-markdownlint",
+            "redhat.vscode-yaml"
+        ]
+    },
+    "settings": {
+        "files.exclude": {
+            "**/node_modules": true,
+            "**/.git": true,
+            "**/obj": true,
+            "**/*.exe": true,
+            "**/*.obj": true,
+            "**/*.pdb": true
+        },
+        "search.exclude": {
+            "**/node_modules": true,
+            "**/.git": true
+        },
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "dprint.dprint",
+        /// Language settings
+        "[asciidoc]": {
+            "editor.wordWrap": "on",
+            "editor.defaultFormatter": "asciidoctor.asciidoctor-vscode"
+        },
+        "[d]": {
+            "editor.defaultFormatter": "webfreak.code-d",
+            "editor.formatOnSave": true
+        },
+        "[json]": {
+            "editor.defaultFormatter": "dprint.dprint"
+        },
+        "[jsonc]": {
+            "editor.defaultFormatter": "dprint.dprint"
+        },
+        "[code-workspace]": {
+            "editor.defaultFormatter": "dprint.dprint"
+        },
+        "[yaml]": {
+            "editor.defaultFormatter": "dprint.dprint"
+        },
+        "markdownlint.config": {
+            "MD033": false
+        },
+        "scm.providerCountBadge": "auto",
+        "git.closeDiffOnOperation": true,
+        "workbench.colorCustomizations": {
+            "mergeEditor.conflict.unhandledFocused.border": "#00945b",
+            "mergeEditor.conflict.unhandledUnfocused.border": "#00784a"
+        }
+    }
+}
